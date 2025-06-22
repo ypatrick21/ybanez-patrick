@@ -83,7 +83,6 @@ button{
 
 /* Container Grid Layout */
 .container {
-    padding: 0 10rem;
     display: grid;
     grid-template-rows: repeat(5, auto) 100vh auto;
     min-height: 100vh;
@@ -289,7 +288,11 @@ section {
     text-align: center;
     font-size: 14px;
 }
-
+@media only screen and (min-width: 1760px) {
+  .container{
+    padding: 0 10rem;
+  }
+}
 @media only screen and (max-width:768px) {
     .container {
         grid-template-rows: repeat(7, auto);
@@ -700,7 +703,7 @@ section {
     flex-wrap: wrap;
 }
 .contact{
-    padding: 5rem;
+    padding: 4rem;
     flex-direction: column;
 }
 .contact-content{
