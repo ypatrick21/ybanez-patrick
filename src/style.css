@@ -464,7 +464,6 @@ section {
     }
     .skills{
         padding: 1rem !important;
-        padding-bottom: 3rem !important;
     }
     .soft-skills{
         gap: 20px !important;
@@ -568,7 +567,7 @@ section {
     display: flex;
     flex-direction: column;
     padding: 4rem;
-    padding-top: 4.5rem;
+    /* padding-top: 4.5rem; */
 }
 
 .soft-skills {
@@ -584,10 +583,6 @@ section {
     font-size: 1.5rem;
     font-weight: 600;
 }
-
-/* .skills .header-section {
-    text-align: unset;
-} */
 
 .card {
     background-color: #1e1e1e;
