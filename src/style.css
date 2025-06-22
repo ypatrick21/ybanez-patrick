@@ -464,6 +464,7 @@ section {
     }
     .skills{
         padding: 1rem !important;
+        padding-bottom: 3rem !important;
     }
     .soft-skills{
         gap: 20px !important;
@@ -476,6 +477,7 @@ section {
     }
     .projects{
         padding: 1rem !important;
+        padding-bottom: 3rem !important;
     }
     .contact{
         padding: 1rem .5rem !important;
