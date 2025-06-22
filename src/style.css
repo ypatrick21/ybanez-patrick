@@ -352,7 +352,6 @@ section {
     .main-page {
         flex-direction: column;
         padding: 1rem;
-        padding-top: 4.3rem;
         height: auto;
     }
 
@@ -415,7 +414,6 @@ section {
     }
     .about{
         padding: 1rem !important;
-        padding-top: 4.3rem !important;
     }
 
     .about-content {
@@ -461,7 +459,6 @@ section {
     }
     .skills{
         padding: 1rem !important;
-        padding-top: 4.3rem !important;
     }
     .soft-skills{
         gap: 20px !important;
@@ -472,8 +469,11 @@ section {
         /* padding: 6rem !important; */
         margin-top: 0px;
     }
+    .projects{
+        padding: 1rem !important;
+    }
     .contact{
-        padding: 5rem .5rem !important;
+        padding: 1rem .5rem !important;
     }
     .card-img-item {
     width: 260px !important;
@@ -524,7 +524,7 @@ section {
 .about-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .about-right-header {
@@ -536,6 +536,7 @@ section {
 .about-right p {
     margin-top: 10px;
     font-size: 18px;
+    text-align:start;
 }
 
 .about-right h2 {
@@ -687,7 +688,6 @@ section {
 }
 .projects{
     flex-direction: column;
-    padding-top: 4.5rem;
     padding-bottom: 3rem !important;
 }
 .project-content{
