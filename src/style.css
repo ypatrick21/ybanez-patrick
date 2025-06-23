@@ -289,14 +289,17 @@ section {
     font-size: 14px;
 }
 @media only screen and (min-width: 1760px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
   .container{
-    padding: 0 10rem;
+    width: 1600px;
   }
 }
 @media only screen and (max-width:768px) {
     .container {
         grid-template-rows: repeat(7, auto);
-        padding: 0;
     }
 
     .hamburger {
