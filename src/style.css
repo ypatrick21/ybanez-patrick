@@ -43,7 +43,10 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-
+:root,
+body {
+  transition: background-color 0.3s ease, color 0.3s ease, filter 0.3s ease;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-background);
