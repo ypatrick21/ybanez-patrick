@@ -25,7 +25,7 @@ function Home() {
                 className="social-link"
                 rel="noopener noreferrer"
               >
-                <img src="/images/icons/facebook-svgrepo-com.svg" alt="Facebook" />
+                <img src="/images/icons/facebook-svgrepo-com.svg" className="invert-icon" alt="Facebook" />
               </a>
               <a
                 href="https://www.instagram.com/impaattyyy/"
@@ -33,7 +33,7 @@ function Home() {
                 className="social-link"
                 rel="noopener noreferrer"
               >
-                <img src="/images/icons/instagram-svgrepo-com.svg" alt="Instagram" />
+                <img src="/images/icons/instagram-svgrepo-com.svg" className="invert-icon" alt="Instagram" />
               </a>
               <a
                 href="https://www.tiktok.com/@pattyy_101"
@@ -41,7 +41,7 @@ function Home() {
                 className="social-link"
                 rel="noopener noreferrer"
               >
-                <img src="/images/icons/tiktok-svgrepo-com.svg" alt="TikTok" />
+                <img src="/images/icons/tiktok-svgrepo-com.svg" className="invert-icon" alt="TikTok" />
               </a>
               <a
                 href="https://www.youtube.com/@ybanezpatrickflor7775"
@@ -49,7 +49,7 @@ function Home() {
                 className="social-link"
                 rel="noopener noreferrer"
               >
-                <img src="/images/icons/youtube-svgrepo-com.svg" alt="YouTube" />
+                <img src="/images/icons/youtube-svgrepo-com.svg" className="invert-icon" alt="YouTube" />
               </a>
             </div>
           </div>

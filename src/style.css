@@ -2,10 +2,41 @@
     --primary-color: #FF004F;
     --main-background: #111111;
     --text-white: #ffffff;
+    --white-eee: #eee;
+    --white-ccc: #ccc;
+    --white-c1c1c1: #c1c1c1;
+    --white-b4b4b4: #b4b4b4;
+    --card-bg-1e1e1e: #1e1e1e;
+    --dark-202020: #202020;
+    --white-D9D9D9: #d9d9d9;
+    --navbar-scrolled-bg: rgba(17, 17, 17, 0.95);
+    --navbar-scrolled-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    --behind-img-bg: linear-gradient(to bottom, #1b1b1b, #2e2e2e);
     --primary-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2),
         /* thin outline */
         0 5px 10px rgba(113, 113, 113, 0.6);
 }
+:root.light-mode {
+    /* --primary-color: #0066ff; */
+    --main-background: #ffffff;
+    --text-white: #000000;
+    --white-eee: #111;
+    --white-ccc: #222;
+    --white-c1c1c1: #333;
+    --white-b4b4b4: #444;
+    --card-bg-1e1e1e: #f5f5f5;
+    --dark-202020: #eaeaea;
+    --white-D9D9D9: #1a1a1a;
+    --navbar-scrolled-bg: rgba(255, 255, 255, 0.95);
+    --navbar-scrolled-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --behind-img-bg: linear-gradient(to bottom, #e5e5e5, #fafafa);
+    --primary-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
+        0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.light-mode .invert-icon {
+  filter: invert(1);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +50,7 @@ body {
 }
 
 .b4b4b4 {
-    color: #b4b4b4;
+    color: var(--white-b4b4b4);
 }
 button{
     border: none;
@@ -30,7 +61,7 @@ button{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #eee;
+    background-color: var(--white-eee);
     color: var(--main-background);
     border: none;
     border-radius: 15px;
@@ -45,7 +76,7 @@ button{
 
 #backToTop:hover {
     background-color: var(--primary-color);
-    color: #eee;
+    color: var(--white-eee);
 }
 
 .hamburger {
@@ -55,7 +86,7 @@ button{
 .hamburger .burgermenu {
     font-size: 32px;
     line-height: 1;
-    color: #eee;
+    color: var(--white-eee);
     cursor: pointer;
     transition: all 0.3s ease;
     padding: 5px;
@@ -63,13 +94,13 @@ button{
 }
 
 .hamburger .burgermenu.active {
-    background-color: #eee;
+    background-color: var(--white-eee);
     /* change as needed */
     color: var(--primary-color);
 }
 
 .hamburger .burgermenu:hover {
-    background-color: #eee;
+    background-color: var(--white-eee);
     color: var(--main-background);
 }
 
@@ -94,7 +125,7 @@ button{
     display: flex;
     padding: 2rem;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--text-white);
 }
 
 .main-page {
@@ -124,7 +155,7 @@ button{
 .main-text-description {
     font-weight: 100;
     font-size: 18px;
-    color: #c1c1c1;
+    color: var(--white-c1c1c1);
     margin-bottom: 3rem;
 }
 
@@ -148,7 +179,7 @@ button{
 
 .technologies .devicon {
     width: 40px;
-    background-color: #eee;
+    background-color: var(--white-eee);
     border-radius: 5px;
     padding: 5px;
     box-shadow: var(--primary-shadow);
@@ -166,13 +197,15 @@ button{
     flex-direction: row;
     gap: 10px;
 }
+.social-medias .social-link{
+    background-color: var(--white-eee);
+    border-radius: 5px;
+    box-shadow: var(--primary-shadow);
+}
 
 .social-medias .social-link img {
     width: 40px;
-    background-color: #eee;
-    border-radius: 5px;
     padding: 5px;
-    box-shadow: var(--primary-shadow);
 }
 
 .col {
@@ -191,14 +224,13 @@ button{
 /* Background behind the image */
 .main-page .behind-image-bg {
     position: absolute;
-    background-color: #12171d;
     width: 60%;
     height: 80%;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    background: linear-gradient(to bottom, #1b1b1b, #2e2e2e);
+    background: var(--behind-img-bg);
     box-shadow: var(--primary-shadow);
 
 }
@@ -221,20 +253,24 @@ button{
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .navbar.scrolled {
-    background-color: rgba(17, 17, 17, 0.95); /* Slightly opaque dark background */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--navbar-scrolled-bg); /* Slightly opaque dark background */
+    /* box-shadow: var(--navbar-scrolled-shadow); */
 }
 
 .header-logo {
     color: #fff;
-    background-color: #FF004F;
+    background-color: var(--primary-color);
     display: inline-block;
     border-radius: 10px;
     padding: 7px;
     text-transform: uppercase;
     font-weight: 800;
 }
-
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .nav-links {
     display: flex;
     list-style: none;
@@ -243,7 +279,7 @@ button{
 
 .nav-item {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-white);
     padding: 5px;
 }
 
@@ -276,14 +312,14 @@ section {
     background: linear-gradient(135deg, #ff416c, #ff004f);
     box-shadow: 0 6px 20px rgba(255, 0, 79, 0.6);
     transform: scale(1.05);
-    color: #fff;
+    /* color: var(--text-white); */
 }
 
 
 /* Footer */
 .footer {
     /* background: #222; */
-    color: white;
+    color: var(--text-white);
     padding: 2rem;
     text-align: center;
     font-size: 14px;
@@ -324,7 +360,7 @@ section {
         position: absolute;
         top: 65px;
         right: 10px;
-        background-color: #eee;
+        background-color: var(--white-eee);
         width: 50%;
         text-align: center;
         z-index: 999;
@@ -587,7 +623,7 @@ section {
 }
 
 .card {
-    background-color: #1e1e1e;
+    background-color: var(--card-bg-1e1e1e);
     border: 1px solid #585858;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -595,7 +631,7 @@ section {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-project {
-    background-color: #1e1e1e;
+    background-color: var(--card-bg-1e1e1e);
     border-radius: 12px;
     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); */
     width: 100%;
@@ -621,7 +657,7 @@ section {
 .card-title {
     font-size: 1.3rem;
     margin: 0;
-    color: #ffffff;
+    color: var(--text-white);
 }
 .center-text{
     text-align: center;
@@ -630,7 +666,7 @@ section {
 .card-body {
     padding: 0 20px 15px 15px;
     font-size: 0.95rem;
-    color: #cccccc;
+    color: var(--white-ccc);
     line-height: 1.5;
 }
 .card-image{
@@ -638,7 +674,6 @@ section {
     padding: 4rem 0rem;
     margin-top: 20px;
     border-radius: 8px;
-    /* background-color: #f43a09; */
 }
 .card-img-item {
     position: absolute;
@@ -667,8 +702,8 @@ section {
 .tech-item{
     display: flex;
     align-items: center;
-    color: #D9D9D9;
-    background: #202020;
+    color: var(--white-D9D9D9);
+    background: var(--dark-202020);
     padding: 0.625rem 1rem;
     border-radius: 0.75rem;
     font-size: 1rem;
@@ -686,7 +721,7 @@ section {
 .hard-skills h3{
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--text-white);
     margin-top: 30px;
     text-align: center;
 }
@@ -744,8 +779,8 @@ section {
   padding: 10px;
   font-size: 16px;
   border: none;
-  color: #ccc;
-  border-bottom: 2px solid #ccc;
+  color: var(--white-ccc);
+  border-bottom: 2px solid var(--white-ccc);
   outline: none;
   background-color: transparent;
 }
@@ -793,10 +828,10 @@ section {
     display: flex;
     align-items: center;
     gap: 5px;
+    background-color: var(--white-eee);
+    border-radius: 5px;
 }
 .contact-link-icon{
     width: 35px;
-    background-color: #eee;
     padding: 5px;
-    border-radius: 5px;
 }

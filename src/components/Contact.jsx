@@ -38,16 +38,16 @@ function Contact() {
           </p>
           <div className="contact-links">
             <a href="https://www.facebook.com/patrickflor.ybanez" target="_blank" className="contact-link-item">
-              <img src="/images/icons/facebook-svgrepo-com.svg" className="contact-link-icon" alt="Facebook" />
+              <img src="/images/icons/facebook-svgrepo-com.svg" className="contact-link-icon invert-icon" alt="Facebook" />
             </a>
             <a href="https://www.instagram.com/impaattyyy/" target="_blank" className="contact-link-item">
-              <img src="/images/icons/instagram-svgrepo-com.svg" className="contact-link-icon" alt="Instagram" />
+              <img src="/images/icons/instagram-svgrepo-com.svg" className="contact-link-icon invert-icon" alt="Instagram" />
             </a>
             <a href="https://www.tiktok.com/@pattyy_101" target="_blank" className="contact-link-item">
-              <img src="/images/icons/tiktok-svgrepo-com.svg" className="contact-link-icon" alt="TikTok" />
+              <img src="/images/icons/tiktok-svgrepo-com.svg" className="contact-link-icon invert-icon" alt="TikTok" />
             </a>
             <a href="https://www.youtube.com/@ybanezpatrickflor7775" target="_blank" className="contact-link-item">
-              <img src="/images/icons/youtube-svgrepo-com.svg" className="contact-link-icon" alt="YouTube" />
+              <img src="/images/icons/youtube-svgrepo-com.svg" className="contact-link-icon invert-icon" alt="YouTube" />
             </a>
           </div>
         </div>

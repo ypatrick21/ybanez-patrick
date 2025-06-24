@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import ThemeToggle from "./ThemeToggle";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,12 +30,15 @@ function Header() {
         <li><a href="#contact" className="nav-item" onClick={handleNavItemClick}>Contact</a></li>
       </ul>
 
-      <a href="#" className="primary-btn nav-btn">Hire me</a>
+      {/* <a href="#" className="primary-btn nav-btn">Hire me</a> */}
 
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        <span className={`material-symbols-outlined burgermenu ${menuOpen ? 'active' : ''}`}>
-          menu
-        </span>
+      <div className="navbar-actions">
+        <ThemeToggle />
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          <span className={`material-symbols-outlined burgermenu ${menuOpen ? 'active' : ''}`}>
+            menu
+          </span>
+        </div>
       </div>
     </header>
   );
