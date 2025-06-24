@@ -24,9 +24,7 @@ function About() {
             As of now, I am still improving my skills about web development.
           </p>
           <p className="b4b4b4">
-            Not just a Web developer, I am also an IT Support / Technical Support.
-            I like to troubleshoot and solve problems about computer systems.
-            In short, I am a Web Developer and Technical Support.
+            Although, I don’t have already an experience in IT companies yet, but during this time I am continue learning new things in technologies like programming languages, frameworks, API and so on.
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ function Home() {
             Hello, <span className="primary-color-text">I'm</span>
           </p>
           <h1 className="main-text-name">Patrick Flor Ybañez</h1>
-          <p className="main-text-role">Web Developer And Technical Support</p>
+          <p className="main-text-role">Web Developer</p>
           <p className="main-text-description">
             The only way to do great work is to Love what you do.
           </p>
