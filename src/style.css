@@ -198,6 +198,9 @@ button{
     gap: 10px;
 }
 .social-medias .social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--white-eee);
     border-radius: 5px;
     box-shadow: var(--primary-shadow);
