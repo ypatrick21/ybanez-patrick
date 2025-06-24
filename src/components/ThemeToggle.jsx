@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
-import "./ThemeToggle.css"; // We'll place your CSS here
+import "./ThemeToggle.css";
 
 const ThemeToggle = () => {
-  const [isLightMode, setIsLightMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true); // default: dark mode
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    const isLight = storedTheme === "light";
-    setIsLightMode(isLight);
-    document.documentElement.classList.toggle("light-mode", isLight);
+    const isDark = storedTheme !== "light"; // treat anything other than 'light' as dark
+    setIsDarkMode(isDark);
+    document.documentElement.classList.toggle("light-mode", !isDark);
   }, []);
 
   const toggleTheme = () => {
-    const newMode = !isLightMode;
-    setIsLightMode(newMode);
-    document.documentElement.classList.toggle("light-mode", newMode);
-    localStorage.setItem("theme", newMode ? "light" : "dark");
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    document.documentElement.classList.toggle("light-mode", !newMode);
+    localStorage.setItem("theme", newMode ? "dark" : "light");
   };
 
   return (
     <label className="switch">
-      <input type="checkbox" checked={isLightMode} onChange={toggleTheme} />
+      <input type="checkbox" checked={isDarkMode} onChange={toggleTheme} />
       <span className="slider"></span>
     </label>
   );
