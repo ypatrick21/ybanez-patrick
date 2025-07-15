@@ -49,6 +49,26 @@ function Projects() {
             <a href="#" className="primary-btn">See more</a>
           </div>
         </div>
+
+        <div className="card-project card-large">
+          <div className="card-image">
+            <img className="card-img-item" src="/images/projects/mynote-app.png" alt="MyNote WebApp" />
+          </div>
+          <div className="card-header">
+            <h3 className="card-title">MyNote WebApp</h3>
+          </div>
+          <div className="card-body">
+            <p>
+              A simple web application designed to help users manage their notes and tasks efficien...
+            </p>
+            {/* <p>
+              A simple web application designed to help users manage their notes and tasks efficiently. It provides a user-friendly interface for creating, editing, and organizing notes, making it easy to keep track of important information and tasks.
+            </p> */}
+          </div>
+          <div className="card-footer">
+            <a href="#" className="primary-btn">See more</a>
+          </div>
+        </div>
       </div>
     </section>
   );
