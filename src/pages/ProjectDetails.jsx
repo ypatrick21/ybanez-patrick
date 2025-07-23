@@ -82,7 +82,7 @@ const ProjectDetails = () => {
 
             <div className="project-links">
               <a href={project.github} target="_blank" rel="noopener noreferrer">
-                GitHub
+                <i className="devicon-github-original colored invert-icon"></i> GitHub
               </a>
               <a href={project.live} target="_blank" rel="noopener noreferrer">
                 Live Demo

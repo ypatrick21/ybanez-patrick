@@ -18,7 +18,8 @@ const projects = [
         title: "MyNote WebApp",
         description: "A simple web application designed to help users manage their notes and tasks efficiently. It provides a user-friendly interface for creating, editing, and organizing notes.",
         image: "/images/projects/mynote-app.png",
-        techStack: ["Shadcn UI", "React + JS Vite", "Tailwind CSS"],
+        techStack: ["Shadcn UI", "React + TS Vite", "Tailwind CSS"],
+        github: "https://github.com/ypatrick21/mynote-app",
         live: "https://ypatrick21.github.io/mynote-app/",
     },
 ];
