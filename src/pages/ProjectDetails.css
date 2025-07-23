@@ -20,8 +20,8 @@
 }
 
 .project-image {
-    width: 60%;
-    max-height: 400px;
+    width: 90%;
+    max-height: 600px;
     object-fit: cover;
     margin-bottom: 2rem;
 }
