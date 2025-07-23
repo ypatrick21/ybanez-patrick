@@ -30,8 +30,6 @@ function Header() {
         <li><a href="#contact" className="nav-item" onClick={handleNavItemClick}>Contact</a></li>
       </ul>
 
-      {/* <a href="#" className="primary-btn nav-btn">Hire me</a> */}
-
       <div className="navbar-actions">
         <ThemeToggle />
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
