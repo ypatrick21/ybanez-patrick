@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import projects from "../data/projects";
 import { motion } from "framer-motion";
+import Footer from '../components/Footer';
 import "./ProjectDetails.css";
 
 const ProjectDetails = () => {
@@ -26,7 +27,8 @@ const ProjectDetails = () => {
   }
 
   return (
-    <motion.section
+    <>
+      <motion.section
       className="project-details section"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
@@ -42,7 +44,6 @@ const ProjectDetails = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3 }}
         />
-
         <motion.h1
           className="project-title"
           initial={{ opacity: 0, y: -20 }}
@@ -51,44 +52,61 @@ const ProjectDetails = () => {
         >
           {project.title}
         </motion.h1>
+        <div className="project-datas">
+          <div className="project-info">
+            <motion.h3
+              className="project-title"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              Description
+            </motion.h3>
+            <motion.p
+              className="project-description"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              {project.description}
+            </motion.p>
+          </div>
 
-        <motion.p
-          className="project-description"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          {project.description}
-        </motion.p>
+          <div className="project-tech-stack">
+            <h4 className="techStack">Tech Stack:</h4>
+            <ul className="tech-stack">
+              {project.techStack.map((tech, index) => (
+                <li key={index}>{tech}</li>
+              ))}
+            </ul>
 
-        <h4 className="techStack">Tech Stack:</h4>
-        <ul className="tech-stack">
-          {project.techStack.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul>
+            <div className="project-links">
+              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+              <a href={project.live} target="_blank" rel="noopener noreferrer">
+                Live Demo
+              </a>
+            </div>
 
-        <div className="project-links">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a href={project.live} target="_blank" rel="noopener noreferrer">
-            Live Demo
-          </a>
+            <div>
+              <motion.button
+              className="back-btn"
+              onClick={handleBackClick}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+            >
+              ← Back to Projects
+            </motion.button>
+            </div>
+          </div>
         </div>
-
-        <motion.button
-          className="back-btn"
-          onClick={handleBackClick}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-        >
-          ← Back to Projects
-        </motion.button>
 
       </div>
     </motion.section>
+    <Footer />
+    </>
   );
 };
 

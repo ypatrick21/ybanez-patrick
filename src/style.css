@@ -684,8 +684,7 @@ section {
 }
 .card-img-item {
     position: absolute;
-    width: 360px;
-    border: 1px solid #585858;
+    width: 70%;
     border-radius: 8px;
     bottom: 0;
     left: 50%;
