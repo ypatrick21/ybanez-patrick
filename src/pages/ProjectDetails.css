@@ -31,7 +31,9 @@
     margin-bottom: 2rem;
     color: var(--white-b4b4b4);
 }
-
+.techStack{
+    margin-bottom: 1rem;
+}
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +45,6 @@
 }
 
 .tech-stack li {
-    margin-top: 2rem;
     background-color: var(--card-bg-1e1e1e);
     padding: 0.5rem 1rem;
     border-radius: 8px;

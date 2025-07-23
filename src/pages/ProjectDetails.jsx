@@ -61,7 +61,7 @@ const ProjectDetails = () => {
           {project.description}
         </motion.p>
 
-        <h4>Tech Stack:</h4>
+        <h4 className="techStack">Tech Stack:</h4>
         <ul className="tech-stack">
           {project.techStack.map((tech, index) => (
             <li key={index}>{tech}</li>
