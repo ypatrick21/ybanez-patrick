@@ -1,4 +1,5 @@
 // src/components/Projects.jsx
+import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -26,7 +27,9 @@ function Projects() {
             </p> */}
           </div>
           <div className="card-footer">
-            <a href="#" className="primary-btn">See more</a>
+            <Link to="/projects/barangay-info-system" className="primary-btn">
+              See more
+            </Link>
           </div>
         </div>
 
@@ -46,7 +49,9 @@ function Projects() {
             </p> */}
           </div>
           <div className="card-footer">
-            <a href="#" className="primary-btn">See more</a>
+            <Link to="/projects/web-based-pos-system" className="primary-btn">
+              See more
+            </Link>
           </div>
         </div>
 
@@ -66,7 +71,9 @@ function Projects() {
             </p> */}
           </div>
           <div className="card-footer">
-            <a href="#" className="primary-btn">See more</a>
+            <Link to="/projects/mynote-webapp" className="primary-btn">
+              See more
+            </Link>
           </div>
         </div>
       </div>
