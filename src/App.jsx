@@ -11,22 +11,23 @@ function App() {
   const [currentSection, setCurrentSection] = useState('');
 
   useEffect(() => {
-    const sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('section');
 
-    const handleScroll = () => {
-      let current = '';
-      sections.forEach((section) => {
-        const top = section.offsetTop;
-        if (window.scrollY >= top - 80) {
-          current = section.getAttribute('id');
-        }
-      });
-      setCurrentSection(current);
-    };
+  const handleScroll = () => {
+    let current = '';
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom >= 100) {
+        current = section.getAttribute('id');
+      }
+    });
+    setCurrentSection(current);
+  };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
 
   useEffect(() => {
     const links = document.querySelectorAll('.nav-links a');

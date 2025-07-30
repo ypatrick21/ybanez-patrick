@@ -1,20 +1,20 @@
 // src/components/Home.jsx
+import { motion } from "framer-motion";
 
 function Home() {
   return (
     <section id="home" className="main-page section">
       <div className="col left">
         <div>
-          <p className="main-text-first">
-            Hello, <span className="primary-color-text">I'm</span>
-          </p>
-          <h1 className="main-text-name">Patrick Flor Ybañez</h1>
-          <p className="main-text-role">Web Developer</p>
-          <p className="main-text-description">
-            The only way to do great work is to Love what you do.
-          </p>
-        </div>
-
+            <p className="main-text-first">
+              Hello, <span className="primary-color-text">I'm</span>
+            </p>
+            <h1 className="main-text-name">Patrick Flor Ybañez</h1>
+            <p className="main-text-role">Web Developer</p>
+            <p className="main-text-description">
+              The only way to do great work is to Love what you do.
+            </p>
+          </div>
         <div className="main-page-links">
           <div>
             <h3>FIND ME ON</h3>
