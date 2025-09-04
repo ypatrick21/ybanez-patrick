@@ -21,6 +21,13 @@ const projects = [
         techStack: ["PHP", "Ajax", "HTML", "CSS", "JavaScript", "MySQL", "Bootstrap", "jQuery", "Twilio SMS"],
     },
     {
+        id: "cms",
+        title: "Content Management System",
+        description: "A mini-capstone project web-based content management system (CMS) that allows users to create, manage, and publish digital content easily. The system provides features for content creation, editing, organization, and publishing, making it ideal for websites and blogs.",
+        image: "/images/projects/cms.PNG",
+        techStack: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "Bootstrap"],
+    },
+    {
         id: "Homeventory",
         title: "Homeventory WebApp",
         description: "A personal project web application designed to help users manage and organize their home inventory. It provides a user-friendly interface for adding, editing, and categorizing household items, making it easy to keep track of belongings.",

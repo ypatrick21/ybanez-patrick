@@ -7,7 +7,7 @@ function Projects() {
     <section id="projects" className="projects section">
       <div className="header-section">
         <h2>PROJECTS</h2>
-        <p className="b4b4b4">Here are some of my projects that I have worked on.</p>
+        <p className="b4b4b4">Here are some of the projects that I have worked on.</p>
       </div>
 
       <div className="project-content">
