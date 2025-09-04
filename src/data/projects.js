@@ -21,6 +21,13 @@ const projects = [
         techStack: ["PHP", "Ajax", "HTML", "CSS", "JavaScript", "MySQL", "Bootstrap", "jQuery", "Twilio SMS"],
     },
     {
+        id: "Homeventory",
+        title: "Homeventory",
+        description: "A personal project web application designed to help users manage and organize their home inventory. It provides a user-friendly interface for adding, editing, and categorizing household items, making it easy to keep track of belongings.",
+        image: "/images/projects/homeventory.png",
+        techStack: ["React + TS Vite", "Tailwind CSS", "Shadcn UI", "Laravel"],
+    },
+    {
         id: "mynote-webapp",
         title: "MyNote WebApp",
         description: "A simple personal project web application designed to help users manage their notes and tasks efficiently. It provides a user-friendly interface for creating, editing, and organizing notes.",
