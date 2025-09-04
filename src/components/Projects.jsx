@@ -14,11 +14,13 @@ function Projects() {
         {projects.map((project) => (
           <div key={project.id} className="card-project card-large">
             <div className="card-image">
+              <Link to={`/projects/${project.id}`}>
               <img
                 className="card-img-item"
                 src={project.image}
                 alt={project.title}
               />
+              </Link>
             </div>
 
             <div className="card-header">
