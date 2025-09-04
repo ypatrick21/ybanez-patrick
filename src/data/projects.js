@@ -18,7 +18,7 @@ const projects = [
         title: "Hulami Gadget Rental System",
         description: "A capstone project web-based gadget rental system that allows users to browse, rent, and manage gadgets online. The system provides features for both owner and borrower, including gadget listings, rental management, and user account management for admin user.",
         image: "/images/projects/gadget_rental.png",
-        techStack: ["PHP", "Ajax", "HTML", "CSS", "JavaScript", "MySQL", "Bootstrap", "jQuery"],
+        techStack: ["PHP", "Ajax", "HTML", "CSS", "JavaScript", "MySQL", "Bootstrap", "jQuery", "Twilio SMS"],
     },
     {
         id: "mynote-webapp",
