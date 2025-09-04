@@ -3,7 +3,7 @@ const projects = [
         id: "barangay-info-system",
         title: "Barangay Information System",
         description: "A capstone project web-based application designed to manage and streamline the operations of a barangay (village) in the Philippines. It provides features for managing resident information, request documents such as certificates, and generating reports.",
-        image: "/images/projects/bis.png", // adjust based on your assets
+        image: "/images/projects/bis.png",
         techStack: ["HTML", "CSS", "PHP", "MySQL", "AJAX", "Twilio SMS", "Bootstrap", "JavaScript"],
     },
     {
