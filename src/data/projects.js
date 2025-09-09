@@ -32,7 +32,7 @@ const projects = [
         title: "Homeventory WebApp",
         description: "A personal project web application designed to help users manage and organize their home inventory. It provides a user-friendly interface for adding, editing, and categorizing household items, making it easy to keep track of belongings.",
         image: "/images/projects/homeventory.png",
-        techStack: ["React + TS Vite", "Tailwind CSS", "Shadcn UI", "Laravel", "SQLite3" ],
+        techStack: ["React + TS Vite", "Tailwind CSS", "Shadcn UI", "Laravel", "SQLite", "Inertia.js" ],
     },
     {
         id: "mynote-webapp",
